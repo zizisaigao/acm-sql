@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>SQL 单题工作台（PostgreSQL）</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="topbar">
+    <div class="title">SQL 单题工作台（PostgreSQL）</div>
+    <button id="runBtn">运行样例 / 对比</button>
+  </div>
+
+  <div class="container">
+    <div class="left">
+      <h3>题目</h3>
+      <textarea id="problemText" class="problem" spellcheck="false" placeholder="把题目粘贴在这里（仅展示用）"></textarea>
+
+
+      <h3>样例表格（JSON）</h3>
+      <textarea id="tablesJson" class="tables" spellcheck="false"></textarea>
+
+    </div>
+
+    <div class="right">
+      <h3>SQL（只允许 SELECT/WITH 单条语句）</h3>
+      <textarea id="sql" class="sql" spellcheck="false"></textarea>
+
+      <h3>输出</h3>
+      <pre id="status"></pre>
+      <div id="result"></div>
+      <pre id="raw"></pre>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
