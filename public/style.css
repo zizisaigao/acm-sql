@@ -20,3 +20,7 @@ table { border-collapse: collapse; width: 100%; margin-top: 8px; }
 th, td { border: 1px solid #ddd; padding: 6px 8px; text-align: left; }
 th { background: #fafafa; }
 .small { color: #666; font-size: 12px; }
+
+/* 左侧输入框高度分配：题目更大，样例其次 */
+textarea.problem { min-height: 360px; }  /* 题目框更大 */
+textarea.tables  { min-height: 200px; }  /* 样例框更大些 */

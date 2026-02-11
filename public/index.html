@@ -15,18 +15,17 @@
   <div class="container">
     <div class="left">
       <h3>题目</h3>
-      <textarea id="problemText" placeholder="把题目粘贴在这里（仅展示用）"></textarea>
+      <textarea id="problemText" class="problem" spellcheck="false" placeholder="把题目粘贴在这里（仅展示用）"></textarea>
+
 
       <h3>样例表格（JSON）</h3>
-      <textarea id="tablesJson"></textarea>
+      <textarea id="tablesJson" class="tables" spellcheck="false"></textarea>
 
-      <h3>期望输出（JSON，可选，用于 AC/WA）</h3>
-      <textarea id="expectedJson"></textarea>
     </div>
 
     <div class="right">
       <h3>SQL（只允许 SELECT/WITH 单条语句）</h3>
-      <textarea id="sql" class="sql"></textarea>
+      <textarea id="sql" class="sql" spellcheck="false"></textarea>
 
       <h3>输出</h3>
       <pre id="status"></pre>
