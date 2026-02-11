@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+.topbar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 14px; border-bottom: 1px solid #ddd;
+}
+.title { font-weight: 700; }
+button { padding: 8px 12px; cursor: pointer; }
+.container { display: grid; grid-template-columns: 1fr 1fr; height: calc(100vh - 52px); }
+.left, .right { padding: 12px; overflow: auto; }
+textarea {
+  width: 100%; min-height: 120px; padding: 10px; border: 1px solid #ccc;
+  border-radius: 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 13px; line-height: 1.4;
+}
+textarea.sql { min-height: 220px; }
+h3 { margin: 10px 0 6px; }
+pre { background: #f6f6f6; padding: 10px; border-radius: 6px; overflow: auto; }
+table { border-collapse: collapse; width: 100%; margin-top: 8px; }
+th, td { border: 1px solid #ddd; padding: 6px 8px; text-align: left; }
+th { background: #fafafa; }
+.small { color: #666; font-size: 12px; }
